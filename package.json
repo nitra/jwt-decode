@@ -1,0 +1,35 @@
+{
+  "name": "@nitra/jwt-decode",
+  "version": "1.1.0",
+  "description": "decode JWT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "browser": "./src/browser.js",
+      "node": "./src/node.js"
+    }
+  },
+  "scripts": {
+    "standard": "npx standard --fix",
+    "fix": "npx standard --fix && npx prettier --write .",
+    "test": "npx coverage-node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nitra/jwt-decode.git"
+  },
+  "author": "v@nitra.ai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nitra/jwt-decode/issues"
+  },
+  "homepage": "https://github.com/nitra/jwt-decode#readme",
+  "prettier": "@nitra/prettier-config",
+  "devDependencies": {
+    "@nitra/prettier-config": "^1.0.0",
+    "test-director": "7.0.0"
+  },
+  "files": [
+    "src"
+  ]
+}
