@@ -9,7 +9,7 @@ export default token => {
     return {}
   }
   try {
-    return JSON.parse(Buffer.from(token.split('.')[1], 'base64'))
+    return JSON.parse(Buffer.from(token.split('.')[1], 'base64url'))
   } catch (error) {
     console.log(error)
     return {}
