@@ -11,7 +11,6 @@ export default token => {
   try {
     return JSON.parse(Buffer.from(token.split('.')[1], 'base64url'))
   } catch (error) {
-    console.log(error)
     return {}
   }
 }
