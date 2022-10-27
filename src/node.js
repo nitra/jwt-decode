@@ -2,9 +2,9 @@
  * JWT Decode
  *
  * @param {String} token token
- * @returns {Object} decoded token
+ * @return {{}} decoded token
  */
-export default token => {
+function def(token) {
   if (!token) {
     return {}
   }
@@ -14,3 +14,5 @@ export default token => {
     return {}
   }
 }
+
+export default def
